@@ -8,6 +8,10 @@ The core of SleekXMPP is contained in four classes: ``XMLStream``,
 stack is a library for working with XML objects that eliminates most
 of the tedium of creating/manipulating XML.
 
+.. image:: _static/images/arch_layers.png
+    :height: 300px
+    :align: center
+
 
 .. index:: XMLStream
 
