@@ -29,6 +29,19 @@ SleekXMPP's design goals and philosphy are:
     defaults and appropriate abstractions. XML can be ugly to work with, but it doesn't
     have to be that way. 
 
+Discussion
+==========
+
+A mailing list and XMPP chat room are available for discussing and getting
+help with SleekXMPP.
+
+Mailing List
+    http://groups.google.com/group/sleekxmpp-discussion
+
+Chat
+    `sleek@conference.jabber.org <xmpp:sleek@conference.jabber.org?join>`_
+
+
 Roadmap for 1.0
 ===============
 
@@ -83,14 +96,30 @@ Stable Releases
 - `1.0 Beta1 <http://github.com/fritzy/SleekXMPP/zipball/1.0-Beta1>`_
 
 
-Contents
-========
+SleekXMPP Architecture and Design
+=================================
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
+
+    architecture.rst
+
+Tutorials, FAQs, and How To Guides
+==================================
+
+
+API Reference
+=============
+
 
 Indices and tables
 ==================
 
+.. toctree::
+    :hidden:
+
+    glossary.rst
+
+* :ref:`glossary`
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
