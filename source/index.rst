@@ -1,8 +1,9 @@
 SleekXMPP
 #########
 
-SleekXMPP is an XMPP library for Python 3.1+ (and compatible with 2.6+), and
-is featured in examples in `XMPP: The Definitive Guide <http://oreilly.com/catalog/9780596521271>`_ 
+SleekXMPP is an XMPP library for Python 3.1+ (and compatible with 2.6+),
+and is featured in examples in
+`XMPP: The Definitive Guide <http://oreilly.com/catalog/9780596521271>`_ 
 by Kevin Smith, Remko Tronçon, and Peter Saint-Andre. If you've arrived
 here from reading the Definitive Guide, please see the notes on updating
 the examples to the latest version of SleekXMPP.
@@ -10,24 +11,25 @@ the examples to the latest version of SleekXMPP.
 SleekXMPP's design goals and philosphy are:
 
 **Low number of dependencies**
-    Installing and using SleekXMPP should be as simple as possible, without having
-    to deal with long dependency chains.
+    Installing and using SleekXMPP should be as simple as possible, without
+    having to deal with long dependency chains.
 
-    As part of reducing the number of dependencies, some third party modules are
-    included with SleekXMPP in the ``thirdparty`` directory. Imports from this
-    module first try to import an existing installed version before loading the
-    packaged version.
+    As part of reducing the number of dependencies, some third party
+    modules are included with SleekXMPP in the ``thirdparty`` directory.
+    Imports from this module first try to import an existing installed
+    version before loading the packaged version.
 
 **Every XEP as a plugin**
-    Following Python's "batteries included" approach, the goal is to provide support
-    for all currently active XEPs (final and draft). Since adding XEP support is done
-    through easy to create plugins, the hope is also provide a solid base for
-    implementing and creating experimental XEPs as well.
-    
+    Following Python's "batteries included" approach, the goal is to
+    provide support for all currently active XEPs (final and draft). Since
+    adding XEP support is done through easy to create plugins, the hope is
+    also provide a solid base for implementing and creating experimental
+    XEPs as well.
+
 **Rewarding to work with**
-    As much as possible, SleekXMPP should allow things to "just work" using sensible
-    defaults and appropriate abstractions. XML can be ugly to work with, but it doesn't
-    have to be that way. 
+    As much as possible, SleekXMPP should allow things to "just work" using
+    sensible defaults and appropriate abstractions. XML can be ugly to work
+    with, but it doesn't have to be that way.
 
 Discussion
 ==========
@@ -105,6 +107,10 @@ SleekXMPP Architecture and Design
 
 Tutorials, FAQs, and How To Guides
 ==================================
+.. toctree::
+    :maxdepth: 2
+
+    xmpp_tdg.rst
 
 
 API Reference
