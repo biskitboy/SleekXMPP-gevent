@@ -32,7 +32,7 @@ SleekXMPP's design goals and philosphy are:
     with, but it doesn't have to be that way.
 
 Discussion
-==========
+----------
 
 A mailing list and XMPP chat room are available for discussing and getting
 help with SleekXMPP.
@@ -45,7 +45,8 @@ Chat
 
 
 Roadmap for 1.0
-===============
+---------------
+
 
 Development on SleekXMPP is currently focused on the 1.0 release which will
 feature a stable, supported API. As such, some older APIs are changing or
@@ -68,7 +69,7 @@ left for 1.1 or later.
 - Add handling for xml:lang attributes for multi-language support.
 
 Active Branches
----------------
+^^^^^^^^^^^^^^^
 - ``develop`` - Contains what will be the next release of SleekXMPP.
 - ``roster`` - Upgraded roster that works with components and external data storage.
 - ``stream_features`` - Cleans up stream feature negotiation by using more stanza objects.
@@ -77,20 +78,20 @@ Active Branches
   will likely break a lot of existing code that uses ``Iq`` stanzas.
 
 Get the Code
-=============
+------------
 The latest source code for SleekXMPP may be found on 
 `Github <http://github.com>`_ at http://github.com/fritzy/SleekXMPP. Releases are
 found in the ``master`` branch, while the latest development version is in
 the ``develop`` branch.
 
 Development Releases
----------------------
+^^^^^^^^^^^^^^^^^^^^
 - `Latest Develop Version <http://github.com/fritzy/SleekXMPP/zipball/develop>`_
 - `External Roster (Based on Develop Version) <http://github.com/fritzy/SleekXMPP/zipball/roster>`_
 - `Stream Features (Based on Develop Version) <http://github.com/fritzy/SleekXMPP/zipball/stream_feaetures>`_
 
 Stable Releases
-----------------
+^^^^^^^^^^^^^^^
 - `1.0 Beta5 <http://github.com/fritzy/SleekXMPP/zipball/1.0-Beta5>`_
 - `1.0 Beta4 <http://github.com/fritzy/SleekXMPP/zipball/1.0-Beta4>`_
 - `1.0 Beta3 <http://github.com/fritzy/SleekXMPP/zipball/1.0-Beta3>`_
@@ -115,6 +116,10 @@ Tutorials, FAQs, and How To Guides
 
 API Reference
 =============
+.. toctree::
+    :maxdepth: 2
+
+    api/event_index.rst
 
 
 Indices and tables
