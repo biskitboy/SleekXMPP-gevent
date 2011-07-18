@@ -18,10 +18,8 @@ import threading
 import time
 import types
 import random
-try:
-    import queue
-except ImportError:
-    import Queue as queue
+
+import gevent.queue as queue
 
 from sleekxmpp.thirdparty.statemachine import StateMachine
 from sleekxmpp.xmlstream import Scheduler, tostring
@@ -768,6 +766,7 @@ class XMLStream(object):
         self.scheduler.process(threaded=True)
 
         def start_thread(name, target):
+            print "Starting %s greenlet" % name
             self.__thread[name] = threading.Thread(name=name, target=target)
             self.__thread[name].daemon = True
             self.__thread[name].start()

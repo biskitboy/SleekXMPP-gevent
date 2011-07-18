@@ -7,10 +7,8 @@
 """
 
 import logging
-try:
-    import queue
-except ImportError:
-    import Queue as queue
+
+import gevent.queue as queue
 
 from sleekxmpp.xmlstream import StanzaBase
 from sleekxmpp.xmlstream.handler.base import BaseHandler

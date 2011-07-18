@@ -8,7 +8,7 @@
 
 from socket import _fileobject
 import socket
-
+import gevent.socket
 
 class FileSocket(_fileobject):
 
@@ -24,6 +24,7 @@ class FileSocket(_fileobject):
         """Read data from the socket as if it were a file."""
         if self._sock is None:
             return None
+        gevent.socket.wait_read(self.fileno())
         data = self._sock.recv(size)
         if data is not None:
             return data
